@@ -1,0 +1,368 @@
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Main Container */
+body {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #000000;
+    transition: all 0.3s ease;
+}
+
+body > *:not(nav):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TYPOGRAPHY HIERARCHY ===== */
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #000000;
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid #000000;
+    transition: all 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav {
+    background: #34495e;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #ecf0f1;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #1abc9c;
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(26, 188, 156, 0.4);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1abc9c;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+section {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #000000;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== HEADING STYLES ===== */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+h2:hover {
+    color: #1abc9c;
+    text-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.4rem;
+    margin: 25px 0 15px;
+}
+
+/* ===== CONTENT ELEMENTS ===== */
+p, li {
+    font-size: 1.1rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+p:hover, li:hover {
+    color: #2c3e50;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+li::before {
+    content: '•';
+    color: #1abc9c;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ===== EXPERIENCE/EDUCATION ITEMS ===== */
+.experience-item, .education-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover, .education-item:hover {
+    border-bottom-color: #1abc9c;
+    transform: translateX(5px);
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    background: #ecf0f1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: #1abc9c;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    background-color: #73a1ce;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    color: #ecf0f1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 30px auto; /* Center the section */
+    padding: 30px; /* Inner spacing */
+    background: white; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-top: 5px solid #1abc9c; /* Accent border at the top */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#contact:hover {
+    transform: translateY(-5px); /* Lift section slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+#contact h2 {
+    color: #2c3e50; /* Dark blue-gray for the heading */
+    font-size: 1.8rem; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    border-bottom: 2px solid #1abc9c; /* Accent underline */
+    padding-bottom: 10px; /* Space for the underline */
+}
+
+#contact p {
+    color: #333; /* Dark gray for the paragraph */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-form label {
+    color: #2c3e50; /* Dark blue-gray for labels */
+    font-weight: 500; /* Medium weight for readability */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 10px; /* Comfortable padding */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    transition: all 0.3s ease; /* Smooth transition for hover/focus effects */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #1abc9c; /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3); /* Subtle glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form select {
+    appearance: none; /* Remove default arrow */
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232c3e50'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e") no-repeat right 10px center; /* Custom arrow */
+    background-size: 12px; /* Size of the arrow */
+}
+
+/* ===== BUTTONS ===== */
+.send-btn,
+.clear-btn {
+    padding: 10px 20px; /* Comfortable padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    font-weight: 500; /* Medium weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.send-btn {
+    background-color: #1abc9c; /* Teal background */
+    color: white; /* White text */
+}
+
+.send-btn:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    transform: translateY(-2px); /* Lift button slightly */
+    box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3); /* Subtle shadow */
+}
+
+.clear-btn {
+    background-color: #e74c3c; /* Red background */
+    color: white; /* White text */
+}
+
+.clear-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift button slightly */
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3); /* Subtle shadow */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px; /* Less padding on small screens */
+        margin: 20px 15px; /* Smaller margins */
+    }
+
+    .contact-form {
+        gap: 10px; /* Less space between form elements */
+    }
+}

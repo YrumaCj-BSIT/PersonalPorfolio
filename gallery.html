@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Product Gallery</title>
+    <style>body {
+        font-family: 'Comic Sans MS', cursive;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f0f8ff; /* Light blue background for a fresh look */
+    }
+    
+    header {
+        background-color: #ff4500; /* Bright orange for attention */
+        color: white;
+        padding: 25px;
+        font-size: 32px;
+        font-weight: bold;
+        border-bottom: 4px solid #cc3700; /* Darker shade for contrast */
+    }
+    
+    nav {
+        background-color: #228b22; /* Forest green for a natural feel */
+        padding: 15px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 25px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    section {
+        margin: 40px auto;
+        max-width: 1000px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners for a modern look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    
+    section h2 {
+        border-bottom: 3px solid #228b22; /* Matching the nav color */
+        display: inline-block;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 28px;
+        color: #333; /* Dark gray for readability */
+    }
+    
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    figure {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 2px solid #ff4500; /* Matching the header color */
+        display: inline-block;
+        width: 250px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+        border-radius: 8px; /* Rounded corners */
+    }
+    
+    figure img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px; /* Rounded corners for images */
+    }
+    
+    figcaption {
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #fff3e0; /* Light orange background for contrast */
+        padding: 10px;
+        border-top: 2px solid #ff4500; /* Matching the header color */
+    }
+    
+    .box {
+        border: 2px solid #228b22; /* Matching the nav color */
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    
+    footer {
+        background-color: #228b22; /* Matching the nav color */
+        color: white;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        text-transform: uppercase; /* Uppercase text for a bold look */
+        letter-spacing: 1px; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured Products</a></li>
+                <li><a href="#sales">Sales Gallery</a></li>
+                <li><a href="#regular">Regular Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index.html">Owner's portfolio</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <h2>Featured Products</h2>
+            
+            <div class="gallery">
+                <figure>
+                    <div class="box">
+                    <img src="https://i.ebayimg.com/images/g/yLMAAOSwAsJj16my/s-l1600.webp" alt="Premium Rice" width="300">
+                </div>
+                    <figcaption>Premium Rice - High Quality</figcaption>
+
+                </figure>
+            </div>
+            
+                <figure>
+                    <div class="box">
+                    <img src="https://i.ebayimg.com/images/g/rPkAAOSwBRlmOC5o/s-l960.webp" alt="Organic Corned Beef" width="300">
+                </div>
+                    <figcaption>Organic Corned Beef - Healthy Choice</figcaption>
+               
+                </figure>
+                <figure>
+
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/5c/ca/cf/5ccacf9076f21a55b696deb96d66828d.jpg" alt="Farm Fresh Eggs" width="300">
+                </div>
+                    <figcaption>Farm Fresh Eggs - Straight from the Farm</figcaption>
+                </figure>
+           
+            </div>
+        </section>
+
+        <section id="sales">
+            <h2>Sales Gallery</h2>
+            <div>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/27/a1/c5/27a1c5ee1b8e2f5ad84f9261a8edc52b.jpg" alt="Fresh Chicken" width="300">
+                </div>
+                    <figcaption>Fresh Chicken - 50% Off</figcaption>
+                </figure>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/7d/06/d4/7d06d4e507e5c1a7075bd5f457a084db.jpg" alt="Dairy Milk" width="300">
+                </div>
+                    <figcaption>Dairy Milk - Buy 1 Get 1 Free</figcaption>
+                </figure>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/3b/8a/b6/3b8ab6a8b56197f8ea6874d9397619a8.jpg" alt="Sweetened Tocino" width="300">
+                </div>
+                    <figcaption>Sweetened Tocino - Special Discount</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="regular">
+            <h2>Regular Gallery</h2>
+            <div>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/66/95/c3/6695c3386607d9582c264c556d63fe71.jpg" alt="Delicious Siomai" width="300">
+                </div>
+                    <figcaption>Delicious Siomai - 50% Off</figcaption>
+                </figure>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/63/0a/11/630a112a2183e1ea20119721b6792153.jpg" alt="Cooking Oil" width="300">
+                </div>
+                    <figcaption>Cooking Oil - Buy 1 Take 1</figcaption>
+                </figure>
+                <figure>
+                    <div class="box">
+                    <img src="https://i.pinimg.com/736x/b7/51/62/b751624308eb3a40d6c8845e9b7a50c3.jpg" alt="Special Discount Coupon" width="300">
+                </div>
+                    <figcaption>Get a Coupon for Every ₱2000 Spent!</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+
+                <label for="message">Your Concern:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Product Gallery</p>
+    </footer>
+</body>
+</html>

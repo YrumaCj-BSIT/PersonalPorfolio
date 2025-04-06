@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="#">
+        <div class="form-header">
+            <h2>Contact Me</h2>
+        </div>
+
+        <label for="fullname">Fullname: <input type="text" placeholder="Surname, Firstname" title="Fullname"></label>
+
+        <p>Password: <input type="password" name="password" size="15" maxlength="30" placeholder="Password" title="Password"></p>
+
+        <button>Click me</button>
+        <input type="Reset" value="Reset">
+
+        <p>Please select your favorite genre:</p>
+        <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="pop" /> Pop
+        <input type="radio" name="genre" value="jazz" /> Jazz
+
+        <p>Please select your favorite music service(s):</p>
+        <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+        <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+
+        <p>What did you think of this gig?</p>
+        <textarea name="comments" cols="30" rows="4">Enter your comments...</textarea>
+
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for>Email:<br /><input type="text" name="email" /></label><br />
+            <label for>Mobile: <br /><input type="text" name="mobile" /></label><br />
+            <label for>Telephone:<br /><input type="text" name="telephone" /></label>
+        </fieldset>
+    </form>
+
+    <p><a href="Resume.html">My resume</a></p>
+    <p><a href="index.html">My portfolio</a></p>
+</body>
+</html>
